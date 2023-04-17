@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<link rel="stylesheet" href="styles.css">
+
+<!-- START NAV -->
+
+<nav id="navbar" class="nav">
+ <img class="logo" src="https://i.postimg.cc/PrNmbpBT/logo.jpg" alt="logo">
+  <ul class="nav-list">
+    <li>
+      <a href="#about-section">About</a>
+    </li>
+    <li>
+      <a href="#works-section">Work</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+
+<body>
+<!-- STYLE FOR LETS START BUTTON -->
+ <style>
+.button {
+  border: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 19px;
+  transition-duration: 0.2s;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family:calibri;
+}
+.enter {
+  background-color: #bd8f53;
+  color:#f4f1e8;
+  padding: 15px 18px;
+  border-radius:10px;
+}
+
+.enter:hover {
+  background-color: #ff5139;
+  color: #f4f1e8;
+}
+    </style>
+	
+
+<!-- START USER LOGIN -->
+<section id="user-login" class="user-login">
+  <h1>I would love to know your name! </h1>
+  <p>It's always great to connect with new people and make our online interactions more personal.</p> 
+  <p> If you feel comfortable, could you please enter your name in the field below? Don't worry, your information will be kept confidential. Thank you!</p>
+  <p><input id="input-name" type="text" height="10" size="50" placeholder="What do you want to be called as?"></p>
+  <p><a href="#about-section"><button onclick="Name()" class="button enter">Let's Start!</button></a></p>
+	<script>
+		function Name() {
+			var com = ".";
+			var input = document.getElementById("input-name").value;
+			document.getElementById("output").innerHTML = input+com;
+		}
+	</script>
+</section>
+
+
+
+<!-- START ABOUT -->
+<section id="about-section" class="about-section">
+<div class="container">
+<div class="about">
+	<h1>Hello, <i><span id="text" ><span id="output"></span></span></i></h1>
+  <h2>Welcome to my website! I'm so glad you stopped by.</h2>
+  <p>I'm Vizzamaed, a college student who's super into web development!I've been tinkering with HTML, CSS, and JavaScript for a while now and I absolutely love it. Creating websites that are not only visually appealing but also user-friendly is my jam! I'm always up for a coding challenge and enjoy collaborating with others to create awesome web solutions. Check out my portfolio and let's chat about your next web works! Can't wait to create something amazing together!
+</p>
+  </div>
+  
+<div class="image">  
+	<img src="https://i.postimg.cc/sXXSr3fK/meee.png">
+</div>
+</div>
+</section>
+
+
+<!-- START WORKS -->
+<section id="works-section" class="works-section">
+<div class="header">
+<h1>I'd love to show you some of the awesome projects I've had the opportunity to work on!</h1>
+<p>Here's a sneak peek at some of the web applications and websites I've brought to life with my coding and design skills. Take a look and let me know what you think!</p></div>
+<div class="image-grid">
+<div class="im">
+<a href="survey.html"><img class="works-pic" src="https://i.postimg.cc/HWqNYJSS/survey.png"></a></div>
+<div class="im">
+<a href="technical.html"><img class="works-pic" src="https://i.postimg.cc/GppRF8nF/Technical.png"></a></div>
+<div class="im">
+<a href="attribute.html"><img class="works-pic" src="https://i.postimg.cc/65bGVwCv/Attribute.png"></a></div>
+<div class="im">
+<a href="landing.html"><img class="works-pic" src="https://i.postimg.cc/GmN75WnB/Landing.png"></a></div>
+</div>
+
+</section>
+
+
+
+<!-- START CONTACTS -->
+<section id="contact" class="contact-section">
+  <div class="contact-section-header">
+	<p>Thank you for visiting my website! I hope you enjoyed exploring my portfolio and getting to know me better. If you have any inquiries or would like to collaborate on a web development project, please feel free to reach out to me.</p>
+	<h1>I'm looking forward to connecting with you!
+  </div>
+  
+  <div class="contact-links">
+    <p><a
+      href="https://facebook.com/vizzamaedollente"
+      target="_blank"
+      class="btn contact-details"
+      ><img class="icon" src="https://i.postimg.cc/MH2XS1My/facebook.jpg">facebook.com/vizzamaedollente</a
+    ></p>
+	<p><a
+      href="https://instagram.com/vizzamaed"
+      target="_blank"
+      class="btn contact-details"
+      ><img class="icon" src="https://i.postimg.cc/FKS4Q8jB/instagram.jpg">instagram.com/vizzamaed</a
+    ></p>
+    <p><a href="mailto:vizzamaedollente@gmail.com" class="btn contact-details"
+      ><img class="icon"  src="https://i.postimg.cc/YqQYhCtr/email.jpg">vizzamaedollente@gmail.com</a
+    ></p>
+    <p><a href="tel:09666205957" class="btn contact-details"
+      ><img class="icon"  src="https://i.postimg.cc/28Lbyy83/call.jpg">09666205957</a
+    ></p>
+  </div>
+</section>
+
+
+
+<footer>
+  <p>
+    <b>
+      vizzamaed 2023</b>
+  </p>
+</footer>
+
+</body>
+</html>

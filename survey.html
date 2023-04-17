@@ -1,0 +1,171 @@
+<!DOCTYPE>
+<html lang"en">
+  <head>
+    <meta charset="UTP-8">
+    <link rel="stylesheet" href="survey.css">
+    <title>Vel Petshop Survey
+    </title>
+  </head>
+  <body>
+     <main>
+        <h1 id="title">Vel Petshop Survey
+    </h1>
+    <p id="description">Thank you for taking the time to help us improve our petshop!
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <p><label for="name" id="name-label">
+          <input required 
+          id="name"
+          type="text"
+          placeholder="Enter your name: ">
+          </label>
+        <label for="email"id="email-label"> 
+          <input 
+          id="email"
+          type="email"
+          required
+          placeholder="Enter Your Email:"/>
+        </label>
+        <label for="number"id="number-label">
+          <input
+          id="number" 
+          type="number"  
+          min="10" max="99"
+          placeholder="Age: "/>
+        <span class="opt">Optional</span></p></label>
+       </fieldset>
+
+       <fieldset>
+       <p> <label for="referrer">Which option best describes your pet?</p>
+        <select id="dropdown" name="dropdown">
+        <option value="">Select your pet's character</option>
+        <option value="1">Hyper</option>
+        <option value="2">Aggressive
+        </option>
+        <option value="3">Sleepyhead
+        </option>
+        <option value="4">Noisy
+        </option>
+        <option value="5">Other</option>
+        </select>
+        </label>
+       </fieldset>
+
+       <fieldset>
+        <label for="definitely"><p>Would you recommend Vel Petshop to a friend?</p>
+        <input 
+        id="definitely" 
+        type="radio" 
+        name="recommend"
+        value="value" 
+        class="inline" /> definitely
+        </label>
+        <label for="maybe">
+        <input 
+        id="maybe" 
+        type="radio" 
+        name="recommend" 
+        value="value" 
+        class="inline" /> Maybe
+        </label>
+        <label for="not-sure">
+        <input id="not-sure"
+        type="radio" 
+        name="recommend"
+        value="value"  
+        class="inline" /> Not sure
+        </label>
+      </fieldset>
+
+
+      <fieldset>
+        <label for="improve">What would you like to see improved?
+       <p><label 
+        for="to-improve" 
+        name="to-improve">
+        <input 
+        id="to-improve" 
+        type="checkbox" 
+        name="to-improve"
+        value="value" 
+        class="inline"> Customer Service
+        </label></p>
+       <p> <label 
+        for="to-improve"
+        name="to-improve">
+        <input 
+        id="to-improve" 
+        type="checkbox" 
+        name="to-improve" 
+        value="value" 
+        class="inline"> Products
+        </label></p>
+       <p> <label 
+        for="to-improve" 
+        name="to-improve">
+        <input 
+        id="to-improve" 
+        type="checkbox" 
+        name="to-improve" 
+        value="value" 
+        class="inline"> Establishment Environment
+        </label></p>
+        <p><label 
+        for="to-improve" 
+        name="to-improve">
+        <input 
+        id="to-improve" 
+        type="checkbox" 
+        name="to-improve" 
+        value="value" 
+        class="inline"> Accessibility
+        </label></p>
+        <p><label 
+        for="to-improve" 
+        name="to-improve">
+        <input 
+        id="to-improve" 
+        type="checkbox" 
+        value="value" 
+        name="to-improve" 
+        class="inline"> Availability
+        </label></p>
+       <p> <label 
+        for="to-improve" 
+        name="to-improve">
+        <input 
+        id="to-improve" 
+        type="checkbox" 
+        value="value" 
+        name="to-improve" 
+        class="inline"> Online Shop
+        </label></p>
+       <p> <label 
+        for="to-improve" 
+        name="to-improve">
+        <input 
+        id="to-improve" 
+        type="checkbox" 
+        name="to-improve" 
+        value="value" 
+        class="inline"> Others
+        </label></p>
+        </label>
+
+      <fieldset>
+        <label 
+        for="comment"><p>Any comments or suggestions?</p>
+        <textarea 
+        id="comment" 
+        name="comment" 
+        rows="3" 
+        cols="30" 
+        placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+        <input class="btn" id="submit" type="submit" value="Submit"/>
+     </form>
+     </main>
+    </body>
+  </html>
